@@ -15,7 +15,7 @@ Mon client et mon serveur peuvent ping mon routeur
 
 ### 3.Mise en place du routage statique
 
-Je vais maintenant permettre au serveur et au client de se ping entre eux en transformant la machine en routeur ( sudo systemctl -w net.ipv4.conf.all.forwarding=1 ) et désactiver le firewall ( sudo sysemctl disable firewalld ).
+Je vais maintenant permettre au serveur et au client de se ping entre eux en transformant la machine en routeur `sudo systemctl -w net.ipv4.conf.all.forwarding=1` et désactiver le firewall `sudo sysemctl disable firewalld`.
 
 Je crée les routes entre net1 et net2 pour qu'ils puissent se ping. 
 Mission accomplie!!
