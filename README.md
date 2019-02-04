@@ -83,11 +83,13 @@ sudo ip neigh flush all
 
 ##### 2.
 Pour afficher la table ARP, j'utilise la commande suivante :
+
 ```bash
 ip neigh show
 ```
 J'obtiens cela : 
-``bash
+
+```bash
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:12 DELAY
 ```
 
