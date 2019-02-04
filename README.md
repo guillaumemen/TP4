@@ -26,7 +26,9 @@ Mission accomplie!!
 #### A. Manip 1
 ##### 1 : 
 Pour vider la table ARP, j'utilise la commande suivante :
+```bash
 sudo ip neigh flush all
+```
 
 ##### 2 :
 Pour afficher la table ARP, j'utilise la commande suivante :
