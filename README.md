@@ -124,9 +124,9 @@ sudo ip neigh flush all
 ##### 2.
 J'affiche la table ARP de client.
 - Pour activer la carte NAT :
-    - J'éteind la machine client1
+    - J'éteind la machine client
     - Dans configurations puis dans réseau, je crée une nouvelle carte en NAT.
-    - Je rallum
+    - Je rallume
 
 
 
