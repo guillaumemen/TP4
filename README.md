@@ -84,8 +84,10 @@ Pour afficher la table ARP, j'utilise la commande suivante :
 ```bash
 ip neigh show
 ```
-
-AFFICHER ET EXPLIQUER LES LIGNES
+ J'obtiens cela : 
+ ``bash
+ 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:12 DELAY
+ ```
 
 ##### 3.
 J'effectue la commande : 
@@ -93,7 +95,7 @@ J'effectue la commande :
 ping server
 ```
 
-AFFICHER ET EXPLIQUER DES LIGNES
+Les machines communiquent entre elles.
 
 ##### 4.
 J'effectue la commande vue ci-dessus pour afficher la table ARP.
@@ -112,7 +114,7 @@ Sur mon PC, j'effectue la commande suivante :
  arp -a
  ```
  
-EXPLIQUER CHANGEMENTS
+![sparkles](./arp.PNG)
 
 #### D. Manip 4
 ##### 1.
@@ -126,8 +128,32 @@ J'affiche la table ARP de client.
 - Pour activer la carte NAT :
     - J'éteind la machine client
     - Dans configurations puis dans réseau, je crée une nouvelle carte en NAT.
-    - Je rallume
+    - Je rallume la machine client 
+    - J'affiche la table ARP
 
+#### 2. Wireshark
+
+#### A. Interception d'ARP et ping
+
+#### 1. Router
+
+ - Lancement de l'enregistrement du trafic avec Wireshark, trafic a enregistrer dans un fichier ping.pcap:
+     ```bash
+     sudo tcpdump -i enp0s9 -w ping.pcap
+     ```
+
+#### 2. Client
+- Vider la table ARP: sudo ip neigh flush all
+- Envoi des 4 pings au server
+
+#### 3. Router
+
+- Quitter la capture (CTRL + C)
+- Je verifie que le fichier ping.pcap soit bien present avec la commande ls 
+- Envoi du fichier ping.pcap sur l'hôte
+
+
+#### B. Interception d'une communication `netcat`
 
 
 
