@@ -40,15 +40,15 @@ On obtiendra :
 ```bash
 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:11 DELAY
 ```
-
 C'est la connexion entre putty et mon oridinateur.
+
 ##### 3 : 
 J'effectue la commande pour afficher la table ARP vue ci-dessus.
 ```bash
 10.2.0.1 dev enp0s3 lladdr 0a:00:27:00:00:12 DELAY
 ```
-
 C'est la connexion entre putty et mon oridinateur.
+
 ##### 4 :
 J'effectue la commande : 
 ```bash
@@ -63,6 +63,7 @@ J'effectue la commande pour afficher la table ARP vue ci-dessus.
 
 1ère ligne : C'est la connexion entre mon client et mon routeur.
 2ème ligne : C'est la connexion entre putty et mon oridinateur.
+
 ##### 5 :
 J'effectue la commande pour afficher la table ARP vue ci-dessus.
 ```bash 
@@ -72,6 +73,7 @@ J'effectue la commande pour afficher la table ARP vue ci-dessus.
 
 1ère ligne : C'est la connexion entre putty et mon oridinateur.
 2ème ligne : C'est la connexion entre mon client et mon routeur.
+
 #### B. Manip 2
 ##### 1.
 Pour vider la table ARP, j'utilise la commande suivante :
@@ -84,12 +86,13 @@ Pour afficher la table ARP, j'utilise la commande suivante :
 ```bash
 ip neigh show
 ```
- J'obtiens cela : 
- ``bash
- 10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:12 DELAY
- ```
+J'obtiens cela : 
+``bash
+10.1.0.1 dev enp0s3 lladdr 0a:00:27:00:00:12 DELAY
+```
 
 ##### 3.
+
 J'effectue la commande : 
 ```bash
 ping server
