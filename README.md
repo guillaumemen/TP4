@@ -119,7 +119,7 @@ Sur mon PC, j'effectue la commande suivante :
  arp -a
  ```
  
-![sparkles](./arp.PNG)
+![image](https://github.com/ManonFargues/TP4/blob/master/arp.png)
 
 #### D. Manip 4
 ##### 1.
